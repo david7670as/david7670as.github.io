@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- icono de la pagina -->
+    <link rel="icon" href="assets/img/Notepad_22522.png" type="image/png">
+    <title>Insert title here</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="assets/css/Black-Navbar.css">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md navbar-fixed-top navigation-clean-button" style="background: rgb(34, 34, 34);border-radius: 20;border-top-left-radius: 20;border-top-right-radius: 20;border-bottom-right-radius: 20;border-bottom-left-radius: 20;border-style: none;padding-top: 0;padding-bottom: 10px;">
+        <div class="container"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div><a class="navbar-brand" href="#"><span>Workbench</span> </a></div>
+            <div>
+                <button class="btn btn-primary" type="button" onclick="darckMode()" style="background: rgb(34,34,34);border-radius: 20;border-top-left-radius: 20;border-top-right-radius: 20;border-bottom-right-radius: 20;border-bottom-left-radius: 20;border-style: none;padding-top: 0;padding-bottom: 10px;">
+                    <a style="color: rgb(255,255,255);">Modo oscuro</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1" style="color: rgb(255,255,255);">
+                <ul class="navbar-nav nav-right">
+                    <li class="nav-item"><a class="nav-link active" href="index.html" style="color: rgba(224,217,217,0.9);">home </a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="color: rgba(224,217,217,0.9);">Services </a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="services.html">Price Packages</a><a class="dropdown-item" href="#">Order Services</a><a class="dropdown-item" href="#">Custom Request</a></div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html" style="color: rgba(224,217,217,0.9);">about </a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html" style="color: rgba(224,217,217,0.9);">faq </a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html" style="color: rgba(224,217,217,0.9);">contact </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav><br>
+    <div class="container">
+        <form action="Formulario.html" method="post" id="formulario1">
+            <div class="row">
+                <div class="col">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-10 col-xxl-9">
+                            <div class="card shadow">
+                                <div class="card-header d-flex flex-wrap justify-content-center align-items-center justify-content-sm-between gap-3">
+                                    <h5 class="display-6 text-nowrap text-capitalize mb-0">Registro</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div class="form-group"><label class="form-label" for="nombre">Nombre del cliente:</label><input class="form-control form-control" type="text" id="nombre" placeholder="Ingrese nombre del cliente" name="nombre"></div>
+                                                <div class="form-group"><label class="form-label" for="codigo">Codigo de comercio:</label><input class="form-control form-control" type="text" id="codigo" placeholder="Ingrese codigo de comercio" name="codigo"></div>
+                                                <div class="form-group"><label class="form-label" for="fantasia">Nombre de fantasia:</label><input class="form-control form-control" type="text" id="fantasia" placeholder="Ingrese nombre de fantasia" name="fantasia"></div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="form-group"><label class="form-label" for="rut">Rut del comercio:</label><input class="form-control form-control" type="text" id="rut" placeholder="Ingrese rut del comercio" name="rut"></div>
+                                                <div class="form-group"><label class="form-label" for="contacto">Numero de contacto:</label><input class="form-control form-control" type="text" id="contacto" placeholder="Ingrese numero de contacto" name="contacto"></div>
+                                                <div class="form-group"><label class="form-label" for="correo">Correo electronico:</label><input class="form-control form-control" type="text" id="correo" placeholder="Ingrese correo electronico" name="correo"></div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="form-group"><label class="form-label" for="observaciones">Observaciones:</label><textarea class="form-control" id="observaciones"></textarea></div>
+                                                <div class="form-group"><label class="form-label" for="requerimientos">Requerimientos:</label><textarea class="form-control" id="requerimientos"></textarea></div>
+                                                <div class="form-group"><label class="form-label" for="sibel">Numero de sibel:</label><input class="form-control form-control" type="text" id="sibel" placeholder="Ingrese numero de sibel" name="sibel"></div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="form-group"><label class="form-label" for="radio">Transferencia:</label>
+                                                    <select class="form-select" id="select">
+                                                        <option value="-ECCE">Sin transferencia</option>
+                                                        <option value="/se transfiere a Area comercial-ECCE">Área comercial</option>
+                                                        <option value="/corta antes de derivar al EPA-ECCE">Corta antes de derivar al EPA</option>
+                                                        <option value="/se transfiere a Fallas Virtuales-ECCE">Fallas virtuales</option>
+                                                        <option value="/Se corta la llamada sin posiblidad de retomar-ECCE">Se corta la llamada sin posiblidad de retomar</option>
+                                                        <option value="/se transfiere a otra area-ECCE">se transfiere a otra area</option>
+                                                        <option value="/se transfiere a Soporte Web-ECCE">Soporte WEB</option>
+                                                        <!-- <option value="/se transfiere a otra area">se transfiere a otra area</option> -->
+                                                    </select>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+            <div class="row justify-content-center">
+                <div class="col-xl-10 col-xxl-9">
+                    <div class="card shadow">
+                        <div class="card-header d-flex flex-wrap justify-content-center align-items-center justify-content-sm-between gap-3"></div>
+                        <div class="card-body">
+                            <div class="row"></div>
+                            <!-- crea 5 botonoes -->
+                            <!-- el boton 1 se llama "agregar"y al darle click se ejecuta la funcion "agregarAtabla()" y "limpiar()" -->
+                            <!-- el boton 2 se llama "eliminar"y al darle click se ejecuta la funcion "eliminarFila()" -->
+                            <!-- el boton 3 se llama "limpiar"y al darle click se ejecuta la funcion "limpiar()" -->
+                            <!-- el boton 4 se llama "datos adicionales" y al darle click se ejecuta la funcion "datosAdicionales()" -->
+                            <!-- el boton 5 se llama "exportar"  y al darle click se ejecuta la funcion "exportar()" -->
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <div class="form-group"><button class="btn btn-primary" type="button" onclick="agregarAtabla(),guarDatosR(),limpiar()" id="agregar1">Agregar</button></div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="form-group"><button class="btn btn-primary" type="button" onclick="eliminarFila()">Eliminar</button></div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="form-group"><button class="btn btn-primary" type="button" onclick="limpiar()">Limpiar</button></div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="form-group"><button class="btn btn-primary" type="button" onclick="datosAdicionales(), desabilitarAgregar1()">Datos adicionales</button></div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="form-group"><button class="btn btn-primary" type="button" onclick="exportar()">Exportar</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer"></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row justify-content-center datosAdicionales">
+                <div class="col-xl-10 col-xxl-9">
+                    <div class="card shadow">
+                        <div class="card-header d-flex flex-wrap justify-content-center align-items-center justify-content-sm-between gap-3"></div>
+                        <div class="card-body">
+                            <div class="row"></div>
+                            <fieldset>
+                                <legend>Datos adicionales</legend>
+                                <p>Seleccione el dato adicional</p>
+                                <!-- crea 3 botonoes -->
+                                <!-- el boton 1 se llama "Producto 7UF"-->
+                                <!-- el boton 2 se llama "renvio de correo"-->
+                                <!-- el boton 3 se llama "cerrar"-->
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="form-group boton-oculto"><button class="btn btn-primary" type="button" onclick="producto7UF();producto7UF1();">Producto 7UF</button></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group boton-oculto"><button class="btn btn-primary" type="button" onclick="renvioCorreo();renvioCorreo1();">Reenvio de correo</button></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group"><button class="btn btn-primary" type="button" onclick="cerrar1(), cerrar2(), habilitarAgregar1(), datosAdicionales()">cancelar</button></div>
+                                    </div>
+                                </div>
+                                <!-- crea un fieldset con un legend que dice "Producto 7UF" -->
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <fieldset class="producto7UF">
+                                            <legend>Producto 7UF</legend>
+                                            <!-- crea un formulario -->
+                                            <!-- el formulario pide como dato obligatorio: "Nombre de fantasia", "Codigo de comercio"-->
+                                            <!-- el formulario pide como dato opcional "Numero de sibel"-->
+                                            <!-- el formulario pide como dato obligatorio: "URL", "¿Tiene carrito de compra?"-->
+                                            <form name="formulario2">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group"><label>Nombre de fantasia</label><input class="form-control" type="text" id="nombreFantasia" name="nombreFantasia"></div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group"><label>Codigo de comercio</label><input class="form-control" type="text" id="codigoComercio" name="codigoComercio"></div>
+                                                    </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group"><label>Numero de sibel</label><input class="form-control" type="text" id="numeroSibel" name="numeroSibel"></div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group"><label>URL</label><input class="form-control" type="text" id="url" name="url"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group"><label>¿Tiene carrito de compra?</label><select class="form-control" id="carritoCompra" name="carritoCompra"><option>seleccione</option><option value="si">Si</option><option value="no">No</option></select></div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group"><label>Plataforma</label><input class="form-control" type="text" id="paltaforma" name="paltaforma"></div>
+                                                    </div>
+                                                </div>
+                                                <!-- el formulario tambien solicita los sigientes datos-->
+                                                <!-- del contacto comercial: "Nombre", "Telefono", "Correo"-->
+                                                <!-- del contacto tecnico: "Nombre", "Telefono", "Correo"-->
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <div class="form-group"><label>Contacto comercial</label></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group"><label>Nombre</label><input class="form-control" type="text" id="nombreComercial" name="nombreComercial"></div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group"><label>Telefono</label><input class="form-control" type="text" id="telefonoComercial" name="telefonoComercial"></div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group"><label>Correo</label><input class="form-control" type="text" id="correoComercial" name="correoComercial"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <div class="form-group"><label>Contacto tecnico</label></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group"><label>Nombre</label><input class="form-control" type="text" id="nombreTecnico" name="nombreTecnico"></div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group"><label>Telefono</label><input class="form-control" type="text" id="telefonoTecnico" name="telefonoTecnico"></div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group"><label>Correo</label><input class="form-control" type="text" id="correoTecnico" name="correoTecnico"></div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="colm-sm-6">
+                                                        <!-- crea un boton que dice "Añadir" -->
+                                                        <button class="btn btn-primary" type="button" onclick="guarDatos7UF(), agregarAtabla(), limpiar()">Añadir</button>
+                                                    </div>
+                                                </div>
+
+                                            </form>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <!-- crea un fieldset con un legend que dice "Reenvio de correo" -->
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <fieldset class="renvioCorreo">
+                                            <legend>Reenvio de correo</legend>
+                                            <!-- crea un formulario -->
+                                            <!-- el formulario pide como dato obligatorio: "Codigo de comercio", "Nombre de fantasia", "Rut del comercio", "Correo electronico"--> 
+                                            <!-- el formulario tiene un boton para añadir un nuevo campo de correo electronico-->
+                                            <!-- el formulario tiene un boton para eliminar el ultimo campo de correo electronico añadido-->
+                                            <!-- el formulario tambien pide: "observaciones" y el motivo -->
+                                            <form name="formulario3">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group"><label>Codigo de comercio</label><input class="form-control" type="text" id="codigoComercio" name="codigoComercio"></div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group"><label>Nombre de fantasia</label><input class="form-control" type="text" id="nombreFantasia" name="nombreFantasia"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group"><label>Rut del comercio</label><input class="form-control" type="text" id="rutComercio" name="rutComercio"></div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group"><label>Correo electronico</label><input class="form-control" type="text" id="correoElectronico" name="correoElectronico"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <div class="form-group"><label>Observaciones</label><textarea class="form-control" id="observaciones" name="observaciones"></textarea></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <div class="form-group"><label>Motivo</label><textarea class="form-control" id="motivo" name="motivo"></textarea></div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="colm-sm-6">
+                                                        <!-- crea un boton que dice "Añadir" -->
+                                                        <button class="btn btn-primary" type="button" onclick="agregarAtabla(),guarDatosR(),limpiar()">Añadir</button>"
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="card-footer"></div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </form>
+        <div class="row justify-content-center">
+            <div class="col-xl-10 col-xxl-9">
+                <div class="card shadow">
+                    <div class="card-header d-flex justify-content-center align-items-center flex-wrap justify-content-sm-between gap-3">
+                        <h5 class="display-6 text-nowrap text-capitalize mb-0"></h5>
+                        <!-- crea una seccion para busacar los datos de la tabla -->
+                        <!-- los datospara realizar la busqueda en la tabla son: "Codigo de comercio",, "Rut del comercio" -->
+                        <!-- el boton de busqueda debe tener un icono de lupa -->
+                        <!-- crea 2 campos de texto para ingresar los datos de busqueda -->
+                        <!-- campo 1: "Codigo de comercio" -->
+                        <!-- campo 2: "Rut del comercio" -->
+                        <!-- crea un boton para realizar la busqueda -->
+                        <!-- el icono esta en la carpeta "img" bajo el nombre: png-clipart-computer-icons-magnifying-glass-magnifying-glass-share-icon-magnifier.png" -->
+                        <!-- los campos 1 y 2 son obligatorios  para la busqueda -->
+                        <div class="d-flex align-items-center">
+                            <div class="input-group">
+                                <div class="input-group-text"><i class="fas fa-search"></i></div>
+                                <input class="form-control" type="text" placeholder="Codigo de comercio" id="texCodeBuscar" name="codigoComercio">
+                                <input class="form-control" type="text" placeholder="Rut del comercio" id="texRutBuscar" name="rutComercio">
+                                <button class="btn btn-primary" type="button" id="buttomBuscar" onclick="buscarDatos();">Buscar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <div class="table-responsive">
+                                    <table class="table" id="datosFormularios">
+                                        <thead>
+                                            <tr>
+                                                <th class="id-tabla">ID</th><!--cell0-->
+                                                <th>Fecha</th><!--cell1-->
+                                                <th>Codigo de comercio</th><!--cell2-->
+                                                <th>Nombre del comercio</th><!--cell3-->
+                                                <th>Rut del comercio</th><!--cell4-->
+                                                <th>Numero de sibel</th><!--cell5-->
+                                                <th>Nombre del cliente</th><!--cell6-->
+                                                <th>Numero de contacto</th><!--cell7-->
+                                                <th>Correo electronico</th><!--cell8-->
+                                                <th>Requerimeinto</th><!--cell9-->
+                                                <th>Observaciones</th><!--cell10-->
+                                                <th>acciones</th><!--cell11-->
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br>
+                    <!-- infromacion adicional: producto 7uf-->
+                    <div class="row justify-content-center" data-bss-disabled-mobile="true" data-aos="fade-down" data-aos-once="true">
+                        <div class="col-xl-10 col-xxl-9">
+                            <div class="card shadow">
+                                <div class="card-header d-flex justify-content-center align-items-center flex-wrap justify-content-sm-between gap-3"></div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <fieldset>
+                                                        <legend style="font-weight: bold;">Producto 7UF</legend>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col"><button class="btn btn-primary" type="button" style="transform: perspective(0px) translate(265px);" name="copiar7uf" onclick="copiar7uf();">Copiar</button></div>
+                                            </div>
+                                        </div>
+                                        <div name="producto-7uf">
+                                            <div class="col-xl-12">
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Nombre de fantasía:</label><input class="form-control-plaintext" type="text" id="nombreFantasia7uf" value="" readonly=""><label class="form-label">Numero de&nbsp; Sibel:</label><input class="form-control-plaintext" type="text" id="numeroSibel7uf" value="" readonly=""><label class="form-label">¿Tiene carrito de compra?&nbsp;</label><input class="form-control-plaintext" type="text" id="carrito7uf" value="" readonly=""></div>
+                                                <div class="col"><label class="form-label">Codigo de comercio:</label><input class="form-control-plaintext" type="text" id="codigoComercio7uf" value="" readonly=""><label class="form-label">Url</label><input class="form-control-plaintext" type="text" id="url7uf" value="" readonly=""><label class="form-label">Plataforma<br></label><input class="form-control-plaintext" type="text" id="paltaforma7uf" value="" readonly=""></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <fieldset>
+                                                        <legend class="fs-5" style="font-style: italic;">-Contacto Comercial</legend>
+                                                    </fieldset>
+                                                    <div class="row">
+                                                        <div class="col"><label class="form-label">Nombre:</label><input class="form-control-plaintext" type="text" id="nombreComercial7uf" value="" readonly=""></div>
+                                                        <div class="col"><label class="form-label">Telefono:</label><input class="form-control-plaintext" type="text" id="telefonoComercial7uf" value="" readonly=""></div>
+                                                        <div class="col"><label class="form-label">Correo:</label><input class="form-control-plaintext" type="text" id="correoComercial7uf" value="" readonly=""></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <fieldset>
+                                                        <legend class="fs-5" style="font-style: italic;">-Contacto Técnico</legend>
+                                                    </fieldset>
+                                                    <div class="row">
+                                                        <div class="col"><label class="form-label">Nombre:</label><input class="form-control-plaintext" type="text" id="nombreTecnico7uf" value="" readonly=""></div>
+                                                        <div class="col"><label class="form-label">Telefono:</label><input class="form-control-plaintext" type="text" id="telefonoTecnico7uf" value="Plain Text Value" readonly=""></div>
+                                                        <!--<div class="col"><label class="form-label">Correo:</label><input class="form-control-plaintext" type="text" id="correoTecnico7uf" value="Plain Text Value" ></div> -->
+                                                        <input id="correoTecnico7uf" class="form-control form-control form-control" type="text" name="nombre" placeholder="Ingrese nombre del cliente" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div></div>
+                                    </div>
+                                </div>
+                                <div class="card-footer"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- infromacion adicional: renvio de correo-->
+                    <div class="row justify-content-center" data-bss-disabled-mobile="true" data-aos="fade-down" data-aos-once="true">
+                        <div class="col-xl-10 col-xxl-9">
+                            <div class="card shadow">
+                                <div class="card-header d-flex justify-content-center align-items-center flex-wrap justify-content-sm-between gap-3"></div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <fieldset>
+                                                        <legend style="font-weight: bold;">Renvió de correo</legend>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col"><button class="btn btn-primary" type="button" style="transform: perspective(0px) translate(265px);" name="copiarRenvio" onclick="copiarRenvio();">Copiar</button></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div name="renvio-correo">
+                                                <div class="row">
+                                                    <div class="col"><label class="form-label">Nombre de fantasía:</label><input class="form-control-plaintext" type="text" value="" readonly=""><label class="form-label">Numero de&nbsp; Sibel:</label><input class="form-control-plaintext" type="text" id="FantasiaRenvio" value="" readonly=""></div>
+                                                    <div class="col"><label class="form-label">Codigo de comercio:</label><input class="form-control-plaintext" type="text" value="" readonly=""><label class="form-label">Correo electrónico:</label><input class="form-control-plaintext" type="text" id="CorreoRenvio" value="" readonly=""></div>
+                                                </div>
+                                                 <div class="row">
+                                                    <div class="col">
+                                                        <div class="row">
+                                                            <div class="col"><label class="form-label">Observaciones<br></label><input class="form-control-plaintext" type="text" id="ObservacionesRenvio" value="" readonly="" style="text-align: center;"></div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col"><label class="form-label">Motivo:</label><input class="form-control-plaintext" type="text" id="MotivoRenvio" value="" readonly="" style="text-align: center;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="card-footer"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer"></div>
+                </div>
+            </div>
+        </div>
+    <footer class="text-center container-fluid">
+        <p>Footer Text</p>
+    </footer>
+    <script>
+        //crea la funcion " buscarDatos()" que busca un dato en la tabla "datosFormularios" en 2 pasos
+//1. busca el dato en la columna "codigoComercio" y si lo encuentra lo selecciona
+//2. si no lo encuentra busca el dato en la columna "Rut del comercio" y si lo encuentra lo selecciona
+//si no encuentra el dato en ninguna de las columnas muestra una alerta
+//cuando encuentra el dato selecciona la fila y la pone de color verde
+//despues de 2 minutos la fila vuelve a su color original
+//la accion esta relacionada al id="buttomBuscar" que es el boton de buscar
+//los campos de busqueda son id="texCodeBuscar" y id="texRutBuscar"
+//aqui se crea la funcion buscarDatos()
+function buscarDatos() {
+    var table = document.getElementById("datosFormularios");
+    var code = document.getElementById("texCodeBuscar").value;
+    var rut = document.getElementById("texRutBuscar").value;
+    var found = false;
+    var codeFound = false;
+    var rutFound = false;
+    for (var r = 1; r < table.rows.length; r++) {
+        table.rows[r].style.backgroundColor = "";
+        table.rows[r].style.color = "";
+        if (table.rows[r].cells[0].innerHTML == code) {
+            found = true;
+            codeFound = true;
+            break;
+        }
+        if (table.rows[r].cells[1].innerHTML == rut) {
+            found = true;
+            rutFound = true;
+            break;
+        }
+    }
+    if (found) {
+        table.rows[r].style.backgroundColor = "green";
+        table.rows[r].style.color = "white";
+        setTimeout(function() {
+            table.rows[r].style.backgroundColor = "";
+            table.rows[r].style.color = "";
+        }, 120000);
+        if (codeFound) {
+            document.getElementById("texRutBuscar").value = "";
+        } else {
+            document.getElementById("texCodeBuscar").value = "";
+        }
+    } else {
+        alert("No se encontro el dato");
+    }
+}
+
+    </script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Formulario.js"></script>
+</body>
+
+</html>

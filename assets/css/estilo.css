@@ -1,0 +1,59 @@
+.navbar {
+  background-color: #000;
+  border: 0;
+  font-size: 11px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+#myCarousel {
+  background: #2f4357;
+  margin-top: 70px;
+}
+
+/* la clase datosAdicionales tiene el atributo hiden, por lo que no se muestra en la pagina */
+
+.datosAdicionales {
+  display: none;
+}
+
+/* la clase producto7UF tiene el atributo hiden, por lo que no se muestra en la pagina */
+
+.producto7UF {
+  display: none;
+}
+
+/* la clase renvioCorreo tiene el atributo hiden, por lo que no se muestra en la pagina */
+
+.renvioCorreo {
+  display: none;
+}
+
+/* el elemento de la clase bi-eye-fill es un icono boton */
+
+/* al hacer click en el icono se muestra el elemento de la clase datosAdicionales */
+
+.bi-eye-fill {
+  cursor: pointer;
+}
+
+/*el  name="id-tabla" esta oculto */
+.id-tabla {
+  display: none;
+}
+
+/*el class="id-fila" esta oculto */
+.id-fila {
+  display: show;
+}
+
+/*oculta la primera columan de la tabla y las celdas que estan debajo de la primera columna */
+#tablaProductos thead tr th:nth-child(1),
+#tablaProductos tbody tr td:nth-child(1) {
+  display: none;
+}
+
+/* crea el modo oscuro */
+
