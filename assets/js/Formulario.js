@@ -117,8 +117,8 @@ function agregarAtabla() {
     cell6.innerHTML = document.getElementById("nombre").value;//agrega el valor del input con id="nombre" en la cell6
     cell7.innerHTML = document.getElementById("contacto").value;//agrega el valor del input con id="contacto" en la cell7
     cell8.innerHTML = document.getElementById("correo").value;//agrega el valor del input con id="correo" en la cell8
-    cell9.innerHTML = document.getElementById("observaciones").value;//agrega el valor del input con id="observaciones" en la cell9
-    cell10.innerHTML = document.getElementById("requerimientos").value+document.getElementById("select").value;//
+    cell9.innerHTML = document.getElementById("requerimientos").value+document.getElementById("select").value;
+    cell10.innerHTML = document.getElementById("observaciones").value;//agrega el valor del input con id="observaciones" en la cell9
     //en la celda 11 se agrega un grupo de 4 botones(bootstrap)
     //cada boton tine el mismo id="id-fila" con el valor de la variable "row" y un atributo "onclick" con la funcion correspondiente
     //los botones son: Modificar, eliminar, 7UF, Renvio correo
