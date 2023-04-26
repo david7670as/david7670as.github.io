@@ -1,0 +1,13 @@
+.correo {
+	border: 1px solid black;
+	padding: 10px;
+	margin: 10px 0;
+}
+
+#baseCorreo {
+	background-color: #c0c0c0;
+}
+
+#correoResultante {
+	background-color: #e0e0e0;
+}

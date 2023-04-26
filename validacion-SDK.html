@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>validacion-Plugin</title>
+  <link rel="icon" href="Recursos\- SDK.png">
+	<link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+	<script src="validacion-SDK\script.js"></script>
+  <script src="Stuk-jszip-2ceb998\dist\jszip.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-menu">
+               <h2>Ahora esta en: Validacion SDK</h2>
+               <!-- <img src="Recursos\- SDK.png" alt="Descripción de la imagen" width="50"> -->
+            <li><a href="Index.html" class="nav-link">Inicio</a></li>
+            <!-- <li><a href="#" class="nav-link">Servicios</a></li> -->
+            <li class="dropdown">
+                <a href="#" class="nav-link dropdown-toggle">Acciones</a>
+                <ul class="dropdown-menu">
+                    <li><a href="validacion-Plugin.html" class="dropdown-link">Validacion Plugin</a></li>
+                    <li><a href="validacion-SDK.html" class="dropdown-link">Validacion SDK</a></li>
+                    <li><a href="correos-tipo.html" class="dropdown-link">Correo tipo</a></li>
+                </ul>
+            </li>
+            <!-- <li><a href="#" class="nav-link">Contacto</a></li> -->
+        </ul>
+            </nav>
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <form>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="codigo-comercio">Código de comercio:</label>
+                          <input type="text" class="form-control" id="codigo-comercio" placeholder="Ingrese código de comercio">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="Nombre-comercio">Nombre comercio:</label>
+                          <input type="text" class="form-control" id="Nombre-comercio" placeholder="Ingrese Nombre de comercio">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="rut-comercio">RUT Código de comercio:</label>
+                          <input type="text" class="form-control" id="rut-comercio" placeholder="Ingrese RUT">
+                          <label for="rut-comercio-infromado">RUT Código de comercio infrormado:</label>
+                          <input type="text" class="form-control" id="rut-comercio-infromado" placeholder="Ingrese RUT informado">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="url-integracion">URL Integración:</label>
+                        <input type="text" class="form-control" id="url-integracion" placeholder="Ingrese URL de Integración">
+                      </div>
+                      <div class="form-group">
+                        <label for="url-produccion">URL Producción:</label>
+                        <input type="text" class="form-control" id="url-produccion" placeholder="Ingrese URL de Producción">
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="nombre-tec">Nombre:</label>
+                          <input type="text" class="form-control" id="nombre-tec" placeholder="Ingrese nombre del contacto tecnico">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="email">Email:</label>
+                          <input type="email" class="form-control" id="email" placeholder="Ingrese email del contacto tecnco y a donde deve de ir la apikey">
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="telefono">Teléfono:</label>
+                          <input type="tel" class="form-control" id="telefono" placeholder="Ingrese teléfono">
+                        </div>
+                        <div class="form-group">
+                          <label for="Tipo">Tipo:</label>
+                          <input type="text" class="form-control" id="Tipo" placeholder="Ingrese el tipo de producto a de validacion">
+                          <label for="producto">Producto:</label>
+                          <input type="text" class="form-control" id="producto" placeholder="Ingrese el tipo de producto a de validacion">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="correo-evidencia">Correo de evidencia (solo se puede cargar un archivo .pdf):</label>
+                        <input type="file" class="form-control-file" id="correo-evidencia" accept=".pdf">
+                      </div>
+                      <div class="form-group">
+                        <label for="logotipo-imagen">Logotipo de imagen (solo se puede cargar una imagen):</label>
+                        <input type="file" id="logotipo-imagen" accept="image/png, image/jpeg, image/gif">
+                      </div>
+                      <div>
+                          <label for="Query-Buider-debit">Prueba Query Buider (debito):</label>
+                          <input type="file" id="Query-Buider-debit" accept="image/png, image/jpeg, image/gif">
+                        </div>
+                      <div>
+                          <label for="Query-Buider-credit">Prueba Query Buider (Credito):</label>
+                          <input type="file" id="Query-Buider-credit" accept="image/png, image/jpeg, image/gif">
+                      </div>
+                    </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                    <label for="correo-apikey">Correo con apikey:</label>
+                    <input type="file" class="form-control-file" id="correo-apikey" accept=".pdf">
+                    </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                          <label for="apikey">Apikey:</label>
+                          <input type="text" class="form-control" name="apikey" id="apikey" placeholder="Ingresa tu apikey">
+                          <div>
+                            <label for="comentario">comentarios adicionales:</label>
+                            <input type="textarea" class="from-control" name="comentario" id="comentario" placeholder="Ingresa comentarios adicionales">
+                          </div>
+                          </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-12">
+                          <input type="button" value="Guardar y descargar" onclick="guardarDatos(), clearfill()">
+                          <input type="button" value="Limpiar" onclick="clearfill()">
+                        </div>
+                      </div>
+                    </form>
+                </div>
+
+
+    </header>
+	<footer>
+		<p>Derechos reservados © 2023</p>
+</footer>
+</body>
+</html>

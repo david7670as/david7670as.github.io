@@ -1,0 +1,31 @@
+Estimado, buenas tardes: 
+ 
+Junto con saludar, le informamos que generamos y asignamos las credenciales requeridas para realizar transacciones, por lo tanto, desde este momento su sitio ya se encuentra en producción y puede realizar transacciones normalmente.
+ 
+ Su Tbk-Api-Key-Secret productiva es la siguiente:
+•             6ce88ceb-ffc3-4b23-ab2a-416140b26ee7
+
+Su Tbk-Api-Key-Id productiva es la siguiente:
+•             597047724070
+ 
+Para finalizar el proceso debe:
+ 
+•             Realizar la configuración al ambiente de producción, encontraras la información en el siguiente link https://www.transbankdevelopers.cl/documentacion/como_empezar#configuración-de-producción   
+ 
+•             Modificar los valores de Tbk-Api-Key-Secret y Tbk-Api-Key-Id del ambiente de integración a producción de acuerdo a los valores indicados anteriormente
+ 
+•             Habilitar un producto de prueba dentro de su sitio por un monto de $50.
+ 
+•             Realizar una transacción con una tarjeta real mediante su sistema de pago (crédito o débito) para validar el correcto funcionamiento de medio de pago en su sitio.
+ 
+•             Si la transacción resulta exitosa, puede generar ventas con total normalidad y no quedarían gestiones pendientes por parte nuestra. En cambio si la transacción falla o presenta algún error, por favor contáctese lo antes posible con nuestra mesa de Fallas Virtuales a los números 600 638 6380 y +562 2661 2700 desde celulares o bien al correo soporteweb@transbank.cl  durante las 24 horas del día.
+ 
+Le solicitamos por favor no responder este correo. En caso de consultas comerciales, comuníquese a los números que aparecen en la firma en la opción 1, con el área de Asistencia Comercial o puede enviar un correo con sus requerimientos a contacto@transbank.cl 
+ 
+Ante cualquier consulta, no dude en comunicarse con nosotros por este mismo medio o en los teléfonos indicados en la firma.
+Saludos cordiales,
+ 
+Saludos cordiales,
+Cristopher Chamorro E.
+Plataforma Técnica de Incorporaciones
+600 638 6380 / +562 2661 2700

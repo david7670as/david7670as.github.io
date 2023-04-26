@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selección de Correos</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Selecciona un correo:</h1>
+	<select id="selectCorreo" onchange="mostrarCorreo()">
+		<option value="0">-- Selecciona un correo --</option>
+		<option value="1">Correo ApiKey</option>
+		<option value="2">Correo de Estado de Validación</option>
+		<option value="3">Correo de Reparos</option>
+	</select>
+
+	<div id="baseCorreo" class="correo">
+		<h2>Correo Base</h2>
+		<p id="baseAsunto"></p>
+		<p id="baseCuerpo"></p>
+	</div>
+
+	<div id="correoResultante" class="correo">
+		<h2>Correo Resultante</h2>
+		<p id="resultanteAsunto"></p>
+		<p id="resultanteCuerpo"></p>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
